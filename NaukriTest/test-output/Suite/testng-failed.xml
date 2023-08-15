@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.utils.SuiteListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.test.LoginPageTest">
+        <methods>
+          <include name="beforeTestMethod"/>
+          <include name="afterMethod"/>
+          <include name="initialization"/>
+          <include name="afterTest"/>
+          <include name="loginMethod" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.test.LoginPageTest -->
+      <class name="com.test.SeachFntTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTestMethod"/>
+          <include name="initialization"/>
+          <include name="afterTest"/>
+          <include name="searchClick"/>
+          <include name="fullSearch"/>
+          <include name="keySelect"/>
+        </methods>
+      </class> <!-- com.test.SeachFntTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
